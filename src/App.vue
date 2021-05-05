@@ -1,6 +1,8 @@
 <template>
+<div id ='navbar'>
+   <NaVBar />
+</div>
 <div id ='app'>
-  <NaVBar />
   <DataTable />
 </div>
 </template>
