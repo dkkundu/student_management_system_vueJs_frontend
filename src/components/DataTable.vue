@@ -16,8 +16,8 @@
               v-model="studentspost.age">
           </div>
           <div class="form-control d-flex col">
-              <input type="test" class="form-control margin-and_padding" id="language" placeholder="Languages"
-              v-model="studentspost.language.name">
+              <input type="test" class="form-control col-4" id="language" placeholder="Languages"
+              v-model="studentspost.programming_languages">
           </div>
          <button type="submit" class="btn btn-primary col margin-and">Submit</button>
 
@@ -38,11 +38,7 @@
         <td scope="row">{{counter+1}}</td>
         <td>{{student.name}}</td>
         <td>{{student.age}}</td>
-        <td>
-          <template v-for="language in student.programming_languages" :key="language.id"> 
-            {{ language.name}},
-          </template>
-        </td>
+        <td>{{student.programming_languages}}</td>
       </tr>
     
     </tbody>
@@ -58,7 +54,7 @@ export default {
       studentspost:{
         'name': '',
         'age': '',
-        'language': '',
+        'programming_languages': '',
 
       },
       
